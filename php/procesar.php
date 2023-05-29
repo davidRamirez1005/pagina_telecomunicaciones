@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -19,13 +18,58 @@
     <!-- place navbar here -->
   </header>
   <main>
-  <tr>
-    <th>nombres:</th>
-    <th>apellidos: </th>
-    <th>correo: </th>
-    <th>telefono: </th>
-    <th>comentarios:</th>
-  </tr>
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombres</th>
+              <th>Apellidos</th>
+              <th>Correo</th>
+              <th>Teléfono</th>
+              <th>Comentarios</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+              // Conexión a la base de datos
+              $servername = "localhost";
+              $username = "root";
+              $password = "";
+              $dbname = "formularioteleco2";
+
+              $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+              // Verificar la conexión
+              if (!$conn) {
+                  die("Conexión fallida: " . mysqli_connect_error());
+              }
+
+              // Consulta SQL para seleccionar los datos que deseas mostrar
+              $sql = "SELECT * FROM telecomunicaciones2";
+
+              $result = mysqli_query($conn, $sql);
+
+              // Recorrer los registros y mostrarlos en la tabla
+              while ($row = mysqli_fetch_assoc($result)) {
+                  echo "<tr>";
+                  echo "<td>" . $row["id"] . "</td>";
+                  echo "<td>" . $row["nombre"] . "</td>";
+                  echo "<td>" . $row["apellido"] . "</td>";
+                  echo "<td>" . $row["correo"] . "</td>";
+                  echo "<td>" . $row["telefono"] . "</td>";
+                  echo "<td>" . $row["comentarios"] . "</td>";
+                  echo "</tr>";
+              }
+
+              // Cerrar la conexión
+              mysqli_close($conn);
+            ?>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </main>
   <footer>
     <!-- place footer here -->
@@ -41,41 +85,3 @@
 </body>
 
 </html>
-
-<div class="resultados">
-<?php
-      // Conexión a la base de datos
-      $servername = "localhost";
-      $username = "root";
-      $password = "";
-      $dbname = "formularioteleco2";
-
-      $conn = mysqli_connect($servername,$username,$password,$dbname);
-
-      // Verificar la conexión
-      if (!$conn) {
-          die("Conexión fallida: ".mysqli_connect_error());
-      }
-
-      // Consulta SQL para seleccionar los datos que deseas mostrar
-      $sql = "SELECT * FROM telecomunicaciones2";
-
-      $result = mysqli_query($conn,$sql);
-
-      // Recorrer los registros y mostrarlos en la tabla
-      while ($row = mysqli_fetch_assoc($result)) {
-        echo "<tr>";
-        echo "<td>" . $row["id"] . "</td>";
-        echo "<td>" . $row["nombre"] . "</td>";
-        echo "<td>" . $row["apellido"] . "</td>";
-        echo "<td>" . $row["correo"] . "</td>";
-        echo "<td>" . $row["telefono"] . "</td>";
-        echo "<td>" . $row["comentarios"] . "</td>";
-
-        echo "</tr>";
-      }
-
-      // Cerrar la conexión
-      mysqli_close($conn);
-    ?>
-    </div>
