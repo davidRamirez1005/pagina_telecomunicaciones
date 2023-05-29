@@ -2,51 +2,76 @@
 import scrollTopButton from "./boton.js";
 import hamburgerMenu from "./hamburguesa.js";
 
+
 const d = document;
 
 d.addEventListener("DOMContentLoaded",()=>{
     hamburgerMenu(".panelBtn",".panel",".menu a")
     scrollTopButton(".scroll-top-btn")
 })
-// Get the modal element
-const modal = document.getElementById('videoModal');
 
-// Get the video player element
-const videoPlayer = document.getElementById('videoPlayer');
 
-// Get all the circle images
-const circleImages = document.querySelectorAll('.circle img');
+$(document).ready(function() {
+  // Obtener el modal y el contenedor del video
+  let modal = $("#modal");
+  let videoContainer = $("#video-container");
+  let videoFrame = $("#video-frame");
 
-// Add click event listener to each circle image
-circleImages.forEach((image) => {
-  image.addEventListener('click', () => {
-    const videoSrc = image.dataset.video;
-    // Set the video source
-    videoPlayer.src = videoSrc;
-    // Show the modal
-    modal.style.display = 'block';
+  // Controlar el clic en una carta
+  $(".card.picture").click(function() {
+    // Obtener el ID del video desde el atributo data-video
+    let videoId = $(this).data("video");
+    
+    // Generar la URL del video de YouTube
+    let videoUrl = "https://www.youtube.com/embed/" + videoId;
+    
+    // Establecer la URL del video en el iframe del modal
+    videoFrame.attr("src", videoUrl);
+    
+    // Mostrar el modal
+    modal.show();
+  });
+
+  $(document).ready(function() {
+    // Obtener el modal y el contenedor del video
+    var modal = $("#modal");
+    var videoContainer = $("#video-container");
+    var videoFrame = $("#video-frame");
+  
+    // Controlar el clic en una carta
+    $(".card.picture").click(function() {
+      // Obtener el ID del video desde el atributo data-video
+      var videoId = $(this).data("video");
+      
+      // Generar la URL del video de YouTube
+      var videoUrl = "https://www.youtube.com/embed/" + videoId;
+      
+      // Establecer la URL del video en el iframe del modal
+      videoFrame.attr("src", videoUrl);
+      
+      // Mostrar el modal
+      modal.show();
+    });
+  
+    // Controlar el clic en el botón de cierre del modal
+    $(".modal .close").click(function() {
+      // Detener la reproducción del video
+      videoFrame.attr("src", "");
+      
+      // Ocultar el modal
+      modal.hide();
+    });
+  
+    // Controlar el clic fuera del modal para cerrarlo
+    $(window).click(function(event) {
+      if (event.target == modal[0]) {
+        // Detener la reproducción del video
+        videoFrame.attr("src", "");
+        
+        // Ocultar el modal
+        modal.hide();
+      }
+    });
   });
 });
 
-// Close the modal when the user clicks on the close button
-const closeButton = document.querySelector('.close');
-closeButton.addEventListener('click', () => {
-  // Pause the video
-  videoPlayer.pause();
-  // Clear the video source
-  videoPlayer.src = '';
-  // Hide the modal
-  modal.style.display = 'none';
-});
-
-// Close the modal when the user clicks outside of it
-window.addEventListener('click', (event) => {
-  if (event.target === modal) {
-    // Pause the video
-    videoPlayer.pause();
-    // Clear the video source
-    videoPlayer.src = '';
-    // Hide the modal
-    modal.style.display = 'none';
-  }
-});

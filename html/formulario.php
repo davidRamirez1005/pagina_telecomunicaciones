@@ -232,13 +232,13 @@ input:focus {
                 </div>
                 <div class="col-4 selector">
                     <a href="https://www.facebook.com/UnidadesTecnologicasdeSantanderUTS/" target="_blank">
-                        <img src="/img/facebook.png" alt="facebook" width="25hv"
+                        <img src="../img/facebook.png" alt="facebook" width="25hv"
                       /></a>
                       <a href="https://www.instagram.com/unidades_uts/"target="_blank"
-                        ><img src="/img/instagram.png" alt="instagram" width="25vh"
+                        ><img src="../img/instagram.png" alt="instagram" width="25vh"
                       /></a>
                       <a href="https://twitter.com/Unidades_UTS"target="_blank"
-                        ><img src="/img/gorjeo.png" alt="twuitter" width="25vh"
+                        ><img src="../img/gorjeo.png" alt="twuitter" width="25vh"
                       /></a>
                 </div>
             </div>
@@ -250,7 +250,7 @@ input:focus {
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="/index.html"
+                    href="../index.html"
                     style="color: white"
                     >Inicio</a
                   >
@@ -263,8 +263,8 @@ input:focus {
                       Plan de estudios
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"style="width: 500px;">
-                      <li><a class="" href="./planIng.html"target="_blank">Ingenieria telecomunicaciones</a></li>
-                      <li><a class="" href="./planTec.php" target="_blank">Tecnologia en gestion de sistemas de telecomunicaciones</a></li>
+                      <li><a class="" href="./planIng.html">Ingenieria telecomunicaciones</a></li>
+                      <li><a class="" href="./planTec.html">Tecnologia en gestion de sistemas de telecomunicaciones</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -348,7 +348,7 @@ input:focus {
 
             </form>   
             <?php
-            include("./php/enviar.php"); 
+            include("../php/enviar.php"); 
             ?>
           </div>
         </div>
