@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0b4a75;
+    border-radius: 100px;
+}
+body::-webkit-scrollbar-button{
+    background-color: #C3D730;
+}
+body::-webkit-scrollbar-track-piece{
+    background-color: transparent;
+}
+.a{
+    background-color: #0b4a75;
+    height: 85%;
+
+}
+/* header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+}
+.contenido {
+    padding-top: 80px;
+  }
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+  } */
+
+.barraNav{
+    background-color: #C3D730;
+
+    height: 50px;
+}
+
+.barraNav li{
+    border-radius: 150px;
+    border-style: none;
+
+}
+.barraNav li a:hover{
+    background-color: #073d61c2;
+    border-radius: 150px;
+    font-weight: bold;
+}
+.lineamientos a{
+    text-decoration: none;
+    color: white;
+}
+.barraNav li a{
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display:flex;
+    font-size: 17px;
+}
+.logo{
+    padding-left: 6%;
+
+}
+.logo span{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+}
+
+.iconos{
+    display: flex;
+    justify-content:end;
+    padding-right: 4%;
+    gap: 1em;
+    padding-top: 22px;
+
+}
+footer{
+    background-color: #666666;
+    padding-top: 4%;
+    color: white;
+}
+.yo{
+    background-color: #171717;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 30px;
+    font-size: small;
+    font-weight: 600;
+    cursor: default;
+    padding-top: 0.6%;
+    width: 100%;
+}
+.informacion{
+    padding-top: 5%;
+    font-size: 18px;
+}
+.ing{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 30px;
+}
+.lista{
+    padding-left: 4%;
+}
+.fondo{
+    background-color: rgb(246, 246, 235);
+}
+.contenedor-nav{
+    text-align: center;
+    background-color: #0b4a75;
+    color: #fff;
+    width: 100%;
+    }
+    .selector{
+      margin-left: 8%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .selector:last-child {
+      margin-right: 0;
+    }
+    
+    .selector a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5% 6%;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <title>UTS</title>
   <!-- Required meta tags -->
@@ -10,23 +9,26 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/favicon-1.png">
     <script src="/js/main.js" type="module" defer></script>
     <link rel="stylesheet" href="/css/index.css">
+
 </head>
 
 <body>
   <header>
     <!-- place navbar here -->
-    <div class="container-fluid">
-        <div class="row">
+    <div class="container-fluid contenedor-nav">
+        <div class="row nav">
             <div class="col-3">
-                <img src="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/Logo-UTS-1.png" alt="uts" width="30%">
+                <img src="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/Logo-UTS-1.png" alt="uts" width="35%">
             </div>
-            <div class="col-4">
+            <div class="col-4 titulo">
                 <h1>TELECOMUNICACIONES</h1>
             </div>
-            <div class="col-4">
-              
+            <div class="col-4 selector">
+              <a href="">INSCRIPCIONES</a>
+              <a href="#contactos">CONTACTOS</a>
             </div>
         </div>
     </div>
@@ -44,19 +46,224 @@
 <div>
 </div>
   <main>
-    
-   </main>
-   <button class="scroll-top-btn hidden">&#11014</button>
-  <footer>
+    <br><br>
+      <div class="row centrarCarrusel">
+        <div class="carrusel">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item ">
+              <img src="https://www.uts.edu.co/sitio/wp-content/uploads/2023/02/banner-acre-telecomunicaciones-1.jpg" class="d-block " alt="..." style="height: 400px;" width="100%">
+            </div>
+            <div class="carousel-item active">
+              <img src="https://www.uts.edu.co/sitio/wp-content/uploads/2023/02/banner-acre-telecomunicaciones-2.jpg" class="d-block w-100 " alt="..."style="height: 400px;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+      <div class="boton">
+        <button ><a href="/php/formulario.php" >INSCRIBETE</a></button>
+      </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row primer" id="perfil_profesional">
+          <h1 class="tit" style="text-align: center; margin-top:3%; color:white">PERFIL PROFESIONAL</h1>
+
+          <div class="col">
+            <hr style="color: white; ">
+            <h2 class="sub" style="text-align: center; color:white">INGENIERIA</h2>
+            <br>
+            <p style="color: white; margin: 4%; font-size: 1.2rem;">Es un profesional que diseña, implementa e innova sistemas de comunicaciones, administra
+              tecnologías, servicios y soluciones empresariales, debido a que cuenta con una sólida
+              formación, en concordancia con el avance de la ciencia y la tecnología.</p>
+              <div >
+                <div class="photo" >
+                  <img src="https://gomezpinzon.com/wp-content/uploads/2022/10/tecnologia-980x653.jpg" alt="ingenieria" >
+                </div>
+                <br>
+                <div class="mas">
+               <a href="/html/ingenieria.html"><button type="button" class="btn btn-primary">Ver mas</button></a>
+                </div>
+              </div>
+          </div>
+          <div class="col color">
+            <hr style="color: white; ">
+            <h2 class="sub" style="text-align: center; color:white">TECNOLOGIA</h2>
+            <br>
+            <p style="color: white; margin: 4%; font-size: 1.2rem;">El Tecnólogo en Telecomunicaciones tendrá capacidades para asistir en el diseño y el despliegue de sistemas de telecomunicaciones, y para realizar su mantenimiento y administración.</p>
+              <div >
+                <div class="photo" >
+                  <img src="https://www.uts.edu.co/sitio/wp-content/uploads/2020/10/UTS_1531-1024x683.jpg" alt="ingenieria" >
+                </div>
+                <br>
+                <div class="mas">
+               <a href="/html/tecnologo.html"><button type="button" class="btn btn-primary">Ver mas</button></a>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="row" id="campo">
+          <h1 class="tit" style="text-align: center;">CAMPOS DE ACCION</h1>
+          <div class="col">
+            <hr>
+            <h2 class="sub" style="text-align: center;">INGENIERIA</h2>
+            <br>
+            <p><strong>El Ingeniero en telecomunicaciones ejerce su profesión en diferentes sectores de las comunicaciones como en empresas de:</strong></p>
+            <br>
+            <p class="mas">
+              <button class="btn btn-primary mas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Ver contenido
+              </button>
+            </p>
+            <div >
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 600px;">
+                  <div class="resalte">
+                    <div >
+                        <ul>
+                          <li>Telefonía pública fija.</li>
+                          <li>Proveedoras de tecnología.</li>
+                          <li>Proveedores Internet, y servicios de valor agregado.</li>
+                          <li>Servicio de televisión por cable.</li>
+                          <li>Gestión y administración de redes de voz y/o datos.</li>
+                          <li>Comunicación celular.</li>
+                          <li>Comunicaciones en el sector satelital.</li>
+                          <li>Emisoras de radiodifusión.</li>
+                          <li>De cualquier sector que posean sistemas de cableado estructurado.</li>
+                          <li>Prestadoras de servicios de telecomunicaciones.</li>
+                          <li>Del sector financiero (transmisión de datos).</li>
+                          <li>Entes gubernamentales de regulación del sector de las telecomunicaciones.</li>
+                        </ul>
+                        <br>
+                        <div class="photo2" >
+                          <img src="https://www.uts.edu.co/sitio/wp-content/uploads/2020/08/RGB-LOGO-TELECOMUNICACIONES_Mesa-de-trabajo-1-251x300.jpg" alt="ingenieria" style="display: flex;
+                          width: 29%;" >
+                        </div>
+                        <br>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <hr>
+            <h2 class="sub" style="text-align: center;">TECNOLOGIA</h2>
+            <br>
+            <p><strong>El Tecnólogo en Gestión de Sistemas de Telecomunicaciones  de las Unidades Tecnológicas de Santander está en capacidad de:</strong></p>
+            <br>
+            <p class="mas">
+              <button class="btn btn-primary mas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
+                Ver contenido
+              </button>
+            </p>
+            <div >
+              <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                <div class="card card-body" style="width: 600px;">
+                <div class="resalteb" >
+                  <ul>
+                    <li>Realizar mantenimiento de equipos de radiodifusión para garantizar su funcionamiento.</li>
+                    <li>Adaptar tecnología en sistemas de radiodifusión compatibles con los estándares nacionales e internacionales.</li>
+                    <li>Integrar antenas a sistemas de transmisión y recepción de señales para un óptimo funcionamiento de acuerdo con las normas establecidas por el ministerio de comunicaciones.</li>
+                    <li>Realizar mantenimiento a redes de TV por cable con una óptima calidad de la señal en el usuario.</li>
+                    <li>Implementar redes LAN y WAN que utilicen medios guiados o inalámbricos cumpliendo con las normas y estándares establecidos.</li>
+                    <li>Configurar dispositivos de comunicaciones para optimizar la eficiencia y la seguridad de las redes informáticas.</li>
+                    <li>Realizar verificaciones en redes que utilizan diferentes medios para la transmisión de voz, datos o imágenes que garantice calidad al usuario.</li>
+                    <li>Aplicar principios y fundamentos esénciales de telefonía fija y móvil en actividades de implementación y soporte para este tipo de redes</li>
+                    <li>Configurar equipos para la implementación y la administración de redes de voz cumpliendo las condiciones de funcionamiento para la prestación de servicios con calidad.</li>
+                    <li> mantenimiento preventivo y correctivo a conmutadores telefónicos que garanticen su correcto funcionamiento.</li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <h2 class="tit" id="laboratorios">LABORATORIOS</h2>
+        <br>
+        <div class="todo">
+          <div class="container animation">
+              <div class="card picture" >
+                <h3 class="title " ><strong>Laboratorio</strong></h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <img src="/img/img1.jpg" alt="" width="97%">
+                </div>
+              </div>
+              <div class="card picture">
+                <h3 class="title " ><strong>Laboratorio</strong> </h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <img src="/img/img2.jpg" alt="" width="97%">
+                </div>
+              </div>
+              <div class="card picture">
+                <h3 class="title " ><strong>Laboratorio</strong> </h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <img src="/img/img3.jpg" alt="" width="97%">
+                </div>
+              </div>
+              <div class="card picture">
+                <h3 class="title " ><strong>Laboratorio</strong> </h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                  <img src="/img/img4.jpg" alt="" width="97%">
+                </div>
+              </div>
+            </div>
+      </div>
+      <div id="videoModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <video id="videoPlayer" controls></video>
+        </div>
+      </div>
+      </div>
+      <br>
+    <hr>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.181195285082!2d-73.12599548522601!3d7.104988394869137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fc8a8b0973f%3A0x5f50c91e41f0ac6e!2sUnidades%20Tecnol%C3%B3gicas%20de%20Santander!5e0!3m2!1ses!2sco!4v1678792799444!5m2!1ses!2sco" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br><br>
+    <button class="scroll-top-btn hidden">&#11014</button>
+    <footer id="contactos">
     <!-- place footer here -->
+    <script>
+      fetch('/html/footter.html')
+          .then(response => response.text())
+          .then(data => {
+          const header = document.querySelector('footer');
+          header.innerHTML = data;
+      });
+  </script>
   </footer>
+</main>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
 </body>
 

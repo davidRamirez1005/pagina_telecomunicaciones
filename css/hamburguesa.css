@@ -2,9 +2,9 @@
  :root{
     --main-font:sans-serif;
     --font-size:16px;
-    --main-color:yellow;
-    --main-second-color:black;
-    --main-modal-color:rgba(146, 146, 9, 0.808);
+    --main-color:#C3D730;
+    --main-second-color: #0b4a75;
+    --main-modal-color:#C3D730;
     --second-modal-color:rgba(10, 9, 9, 0.85);
     --container-widht:1200px;
  }
@@ -23,12 +23,7 @@
     margin: 0;
     overflow-x:hidden ;
  }
- header{
-    position: sticky;
-    top: 0;
-    padding: 1rem;
-    color: var(--main-second-color);
-}
+
 header h1{
     margin: 0 auto;
     text-align: center;
