@@ -165,3 +165,9 @@ footer{
     text-shadow:-2px -2px 2px #C3D730;
     color: #000000;
 }
+header{
+    transform: translateY(-160px);
+}
+.efectoOpacity{
+    opacity: 0;
+}

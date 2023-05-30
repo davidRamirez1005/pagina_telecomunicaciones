@@ -7,239 +7,238 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="https://www.uts.edu.co/sitio/wp-content/uploads/2019/10/favicon-1.png">
-
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
   <!-- <link rel="stylesheet" href="./css/formulario.css"> -->
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0%;
-      padding: 0%;
-    }
-
-    body::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    body::-webkit-scrollbar-thumb {
-      background-color: #0b4a75;
-      border-radius: 100px;
-    }
-
-    body::-webkit-scrollbar-button {
-      background-color: #C3D730;
-    }
-
-    body::-webkit-scrollbar-track-piece {
-      background-color: transparent;
-    }
-
-    .a {
-      background-color: #0b4a75;
-      height: 85%;
-    }
-
-    .barraNav {
-      background-color: #C3D730;
-      height: 50px;
-    }
-
-    .barraNav li {
-      border-radius: 150px;
-      border-style: none;
-
-    }
-
-    .barraNav li a:hover {
-      background-color: #073d61c2;
-      border-radius: 150px;
-      font-weight: bold;
-    }
-
-    .lineamientos a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .barraNav li a {
-      align-items: center;
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      height: 50px;
-      padding-left: 30px;
-      padding-right: 30px;
-      display: flex;
-      font-size: 17px;
-    }
-
-    .logo {
-      padding-left: 6%;
-
-    }
-
-    .logo span {
-      font-weight: 700;
-      font-size: 30px;
-      color: white;
-    }
-
-    .iconos {
-      display: flex;
-      justify-content: end;
-      padding-right: 4%;
-      gap: 1em;
-      padding-top: 22px;
-
-    }
-
-    .enviar {
-      display: flex;
-      justify-content: center;
-    }
-    form{
-      display: flex;
-      justify-content: center;
-    }
-    .formulario {
-      box-shadow: -1px 10px 5px 7px rgba(43, 44, 44, 0.6), 0px 1px 3px 4px rgba(213, 213, 213, 0.764);
-      padding: 52px;
-      border-radius: 20px;
-      width: 52%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      filter: drop-shadow(2px 4px 6px black);
-    }
-    .inputs{
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: none;
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
-    footer {
-      background-color: #666666;
-      padding-top: 4%;
-      color: white;
-    }
-    .frame {
-      width: 90%;
-      margin: 40px auto;
-      text-align: center;
-    }
 
-    button {
-      margin: 20px;
-    }
+body::-webkit-scrollbar {
+  width: 10px;
+}
 
-    .custom-btn {
-      width: 130px;
-      height: 40px;
-      color: #fff;
-      border-radius: 5px;
-      padding: 10px 25px;
-      font-family: 'Lato', sans-serif;
-      font-weight: 500;
-      background: transparent;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      display: inline-block;
-      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-        7px 7px 20px 0px rgba(0, 0, 0, .1),
-        4px 4px 5px 0px rgba(0, 0, 0, .1);
-      outline: none;
-    }
+body::-webkit-scrollbar-thumb {
+  background-color: #0b4a75;
+  border-radius: 100px;
+}
 
-    .btn-5 {
-      width: 130px;
-      height: 40px;
-      line-height: 42px;
-      padding: 0;
-      border: none;
-      background: #0b4a75;
-      background: linear-gradient(0deg, #0b4a75 0%, #0b4a75 100%);
-    }
+body::-webkit-scrollbar-button {
+  background-color: #C3D730;
+}
 
-    .btn-5:hover {
-      color: #0b4a75;
-      background: transparent;
-      box-shadow: none;
-    }
+body::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+.a {
+  background-color: #0b4a75;
+  height: 85%;
+}
 
-    .btn-5:before,
-    .btn-5:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 2px;
-      width: 0;
-      background: #C3D730;
-      box-shadow:
-        -1px -1px 5px 0px #fff,
-        7px 7px 20px 0px #0003,
-        4px 4px 5px 0px #0002;
-      transition: 400ms ease all;
-    }
+.barraNav {
+  background-color: #C3D730;
+  height: 50px;
+}
 
-    .btn-5:after {
-      right: inherit;
-      top: inherit;
-      left: 0;
-      bottom: 0;
-    }
+.barraNav li {
+  border-radius: 150px;
+  border-style: none;
 
-    .btn-5:hover:before,
-    .btn-5:hover:after {
-      width: 100%;
-      transition: 800ms ease all;
-    }
+}
 
-    .contenedor-nav {
-      text-align: center;
-      background-color: #0b4a75;
-      color: #fff;
-      width: 100%;
-    }
+.barraNav li a:hover {
+  background-color: #073d61c2;
+  border-radius: 150px;
+  font-weight: bold;
+}
 
-    .selector {
-      margin-left: 8%;
-      display: flex;
-      flex-wrap: wrap;
-    }
+.lineamientos a {
+  text-decoration: none;
+  color: white;
+}
 
-    .selector:last-child {
-      margin-right: 0;
-    }
+.barraNav li a {
+  align-items: center;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  font-size: 17px;
+}
 
-    .selector a {
-      text-decoration: none;
-      color: #fff;
-      padding: 5% 6%;
-      border-radius: 5px;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-    }
-    input{
-      border-radius: 10px;
-      margin-bottom: 5%;
-    }
-    input:active {
-      background-color: transparent;
-      box-shadow: 2px 2px 15px rgb(195, 215, 48) inset;
-    }
+.logo {
+  padding-left: 6%;
 
-    input:focus {
-      background-color: rgba(0, 0, 255, 0.158);
-      box-shadow: 2px 2px 15px #2e3e77f8 inset;
-      color: black;
-      justify-content: center;
-      text-align: center;
-      font-size: 16px;
-    }
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+.iconos {
+  display: flex;
+  justify-content: end;
+  padding-right: 4%;
+  gap: 1em;
+  padding-top: 22px;
+
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
+}
+form{
+  display: flex;
+  justify-content: center;
+}
+.formulario {
+  box-shadow: -1px 10px 5px 7px rgba(43, 44, 44, 0.6), 0px 1px 3px 4px rgba(213, 213, 213, 0.764);
+  padding: 52px;
+  border-radius: 20px;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  filter: drop-shadow(2px 4px 6px black);
+}
+.inputs{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: none;
+}
+footer {
+  background-color: #666666;
+  padding-top: 4%;
+  color: white;
+}
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #0b4a75;
+  background: linear-gradient(0deg, #0b4a75 0%, #0b4a75 100%);
+}
+
+.btn-5:hover {
+  color: #0b4a75;
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #C3D730;
+  box-shadow:
+    -1px -1px 5px 0px #fff,
+    7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.contenedor-nav {
+  text-align: center;
+  background-color: #0b4a75;
+  color: #fff;
+  width: 100%;
+}
+
+.selector {
+  margin-left: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.selector:last-child {
+  margin-right: 0;
+}
+
+.selector a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5% 6%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+input{
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+input:active {
+  background-color: transparent;
+  box-shadow: 2px 2px 15px rgb(195, 215, 48) inset;
+}
+
+input:focus {
+  background-color: rgba(0, 0, 255, 0.158);
+  box-shadow: 2px 2px 15px #2e3e77f8 inset;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+}
   </style>
 </head>
 
@@ -287,7 +286,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="efectoOpacity">
     <br>
     <div class="row" style="width: 100%;">
       <div class="col-5">
@@ -360,7 +359,7 @@
     <br><br><br><br>
 
   </main>
-  <footer>
+  <footer class="efectoOpacity">
     <!-- place footer here -->
     <script>
       fetch('./footter.html')
