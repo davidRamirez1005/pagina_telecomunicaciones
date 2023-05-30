@@ -97,30 +97,32 @@
       display: flex;
       justify-content: center;
     }
-
+    form{
+      display: flex;
+      justify-content: center;
+    }
     .formulario {
       box-shadow: -1px 10px 5px 7px rgba(43, 44, 44, 0.6), 0px 1px 3px 4px rgba(213, 213, 213, 0.764);
-      padding: 20px;
+      padding: 52px;
+      border-radius: 20px;
+      width: 52%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      filter: drop-shadow(2px 4px 6px black);
     }
-
+    .inputs{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+}
     footer {
       background-color: #666666;
       padding-top: 4%;
       color: white;
     }
-
-    .yo {
-      background-color: #171717;
-      color: rgb(255, 255, 255);
-      text-align: center;
-      height: 30px;
-      font-size: small;
-      font-weight: 600;
-      cursor: default;
-      padding-top: 0.6%;
-      width: 100%;
-    }
-
     .frame {
       width: 90%;
       margin: 40px auto;
@@ -221,7 +223,10 @@
       align-items: center;
       flex-direction: row;
     }
-
+    input{
+      border-radius: 10px;
+      margin-bottom: 5%;
+    }
     input:active {
       background-color: transparent;
       box-shadow: 2px 2px 15px rgb(195, 215, 48) inset;
@@ -303,25 +308,25 @@
       <form method="post" action="../php/enviar.php">
         <br>
         <div class="formulario">
-          <div class="row">
+          <div class="row inputs">
             <div class="col">
               <div>
-                <p for="floatingInput">Nombres</p>
+                <h5 for="floatingInput">Nombres:</h5>
                 <input type="text" style="border:
                           1.5px solid rgba(24, 23, 23, 0.289)" id="floatingInput" placeholder="nombres" required name="nombre">
               </div>
             </div>
             <div class="col">
               <div>
-                <p for="floatingInput">Apellidos</p>
+                <h5 for="floatingInput">Apellidos:</h5>
                 <input type="text" id="floatingInput" placeholder="apellidos" style="border:
                           1.5px solid rgba(24, 23, 23, 0.289)" required name="apellido">
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row inputs">
             <div class="col">
-              <p>Correo electronico:</p>
+              <h5>Correo electronico:</h5>
               <div class="input-group">
                 <input name="correo" type="text" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required style="border:
                           1.5px solid rgba(24, 23, 23, 0.289)">
@@ -329,7 +334,7 @@
             </div>
             <br>
             <div class="col">
-              <p>Telefono:</p>
+              <h5>Telefono:</h5>
               <div class="input-group">
                 <input name="telefono" type="text" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required style="border:
                           1.5px solid rgba(24, 23, 23, 0.289)">
